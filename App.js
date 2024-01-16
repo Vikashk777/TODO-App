@@ -18,6 +18,8 @@ btn.addEventListener("click", function () {
 
 })
 
+
+// Delete item
 ul.addEventListener("click",function(event){
     if(event.target.nodeName = "BUTTON"){
         let ListItem = event.target.parentElement;
