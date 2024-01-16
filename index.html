@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO APP</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+            font-family: serif;
+        }
+        .container{
+            display: grid;
+            justify-content: center;
+            /* align-items: center; */
+        }
+        input{
+            margin: 0px 50px;
+            height: 20px;
+            /* padding: 2px; */
+            outline: none;
+        }
+        input[type=text]{
+            padding-left: 5px;
+            font-size: 1em;
+        }
+        #submit{
+            width: 20%;
+            margin: 10px 35%;
+            background-color: rgb(118, 118, 235);
+            color: white;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+            border: none;
+            padding: 3px 5px;
+        }
+        /* button:active{
+            background-color: red;
+        } */
+        #submit:hover{
+            /* border: 1px solid black; */
+            background-color: red;
+            border: none;
+        }
+        li{
+            /* text-align: center; */
+            font-size: 1.4rem;
+        }
+        .delete{
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to TODO App</h1>
+        <div class="box">
+            <input maxlength="20" type="text" placeholder="Enter Movement...">
+        </div>
+        <button id="submit">Submit</button>
+        <ul>
+            <li>Eat <button class="delete">Delete</button></li>
+            <li>Play <button class="delete">Delete</button></li>
+        </ul>
+    </div>
+</body>
+<script src="App.js"></script>
+</html>
